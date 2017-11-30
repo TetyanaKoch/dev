@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: lightslategrey;
+    max-width:1000px;
+    width:100%;
+    margin:0 auto;
+}
+.head{
+    background-color: cadetblue;
+    height: 40px;
+}
+.navi {
+    float: left;
+    background-color: aliceblue;
+    width: 25%;
+    height: 450px;
+}
+.content {
+    background-color: lightblue;
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+
+.sidebar {
+    background-color: aliceblue;
+    width: 25%;
+    height: 450px;
+    float: left;
+}
+.clearfix{
+    clear:both;
+}
+.box{
+    width:330.33px;
+    float:left;
+    border: 1px solid cadetblue;
+    margin:0;
+}
+
