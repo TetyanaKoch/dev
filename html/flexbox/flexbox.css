@@ -1,0 +1,35 @@
+/*mobile*/
+header, footer {
+    background-color: darkslategray;
+    height: 30px;}
+
+.rechts, .links {
+    background-color: antiquewhite;
+}
+
+.main {
+    background-color: aliceblue;
+
+}
+/*monitor*/
+@media screen and (min-width: 768px) {
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .rechts, .links {
+        background-color: antiquewhite;
+        flex-grow: 1;
+    }
+
+    .main {
+        background-color: aliceblue;
+        flex-basis: 60%;
+    }
+    footer, header{
+        flex-basis: 100%;
+    }
+}
