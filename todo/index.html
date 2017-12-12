@@ -8,23 +8,42 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class ="head">
+    <div class="head">
         <h1>todos</h1>
     </div>
     <div class="list">
-        <div id="enter"><input type="text" class="auswahl" placeholder="What need to be done?" size="150" /></div>
+        <div id="enter"><input type="text" class="auswahl padded" placeholder="What need to be done?" size="150"/></div>
 
 
         <ul id="liste">
-            <li><img src="checkbox-checked.svg"> Milch<div class="button">X</div></li>
-            <li><img src="checkbox-initial.svg">Wasser<div class="button">X</div></li>
-            <li><img src="checkbox-initial.svg">Orangensaft<div class="button">X</div></li>
+            <li class="container">
+                <div class="checkbox"><img src="checkbox-checked.svg"></div>
+                <div class="item">Milch</div>
+                <button>X</button>
+            </li>
+            <li class="container">
+                <div class="checkbox"><img src="checkbox-initial.svg"></div>
+                <div class="item">Wasser</div>
+                <button>X</button>
+            </li>
+            <li class="container">
+                <div class="checkbox"><img src="checkbox-initial.svg"></div>
+                <div class="item">Orangensaft</div>
+                <button>X</button>
+            </li>
         </ul>
 
-        <div class="item"> 3 Items left</div>
+        <div class="footer"><p class="padded">3 Items left</p>
+            <div class="pile">
+                <div class="pile">
+                    <div class="pile"></div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  
-    </div>    
+
+</div>
 </body>
 
 
