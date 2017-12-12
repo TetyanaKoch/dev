@@ -1,0 +1,45 @@
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    bottom: 400px;
+
+    animation:pulse 5s infinite;
+
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-direction: initial;
+
+
+}
+@keyframes pulse {
+    0% {
+        left: 300px;
+        bottom: 400px;
+    }
+    25% {
+        background-color:lightpink;
+        left: 400px;
+        bottom: 500px;
+    }
+    50% {
+        background-color: lightsteelblue;
+        left: 500px;
+        bottom: 600px;
+    }
+    75% {
+        background-color: lightcoral;
+        left: 600px;
+        bottom: 500px;
+    }
+    100% {
+        background-color: linen;
+        left: 700px;
+        bottom: 400px;
+    }
+
+}
