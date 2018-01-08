@@ -1,0 +1,17 @@
+.list__item button {
+  width: 50px;
+  border: $border-color;
+  font-size: 0;
+
+
+  transition: {
+    property: all;
+    duration: 0.5s;
+    delay: 0.3s;
+    timing-function:ease-in;
+  }
+  &:hover{
+    background-color: darken();
+    font-size: 20px;
+}
+}

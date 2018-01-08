@@ -11,7 +11,6 @@
   }
 
   &__item--checkbox {
-
   }
 
   &__item--text {
@@ -23,15 +22,5 @@
   }
 }
 
-.list__item button {
-  width: 50px;
-  border: $border-color;
 
-  transition: {
-    property: all;
-    duration: 0.5s;
-    delay: 0.3s;
-    timing-function:ease-in;
-  }
-}
 

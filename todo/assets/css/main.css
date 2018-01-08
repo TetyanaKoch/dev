@@ -56,14 +56,6 @@ table {
     margin-left: 10px;
     margin-top: 10px; }
 
-.list__item button {
-  width: 50px;
-  border: 1px solid #ededed;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-delay: 0.3s;
-  transition-timing-function: ease-in; }
-
 .footer {
   position: relative; }
 
@@ -92,6 +84,14 @@ table {
       background-color: #ffffff;
       border: 1px solid #ededed;
       border-top: 0; }
+
+.list__item button {
+  width: 50px;
+  border: 1px solid #ededed;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+  transition-timing-function: ease-in; }
 
 body {
   font-family: “Helvetica Neue”, Helvetica, Arial, Verdana, sans-serif;
