@@ -1,4 +1,7 @@
+$color_button:grey;
+
 .list__item button {
+  background-color: $color_button;
   width: 50px;
   border: $border-color;
   font-size: 0;
@@ -11,7 +14,8 @@
     timing-function:ease-in;
   }
   &:hover{
-    background-color: darken();
+    background-color: darken($color_button, 20%);
     font-size: 20px;
+    border-radius:50%;
 }
 }
