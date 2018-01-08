@@ -1,18 +1,35 @@
 .footer{
   position: relative;
 }
-.padded {
-  padding: 20px;
-}
-.pile {
-  position: absolute;
-  height: 5px;
-  width: 99%;
-  bottom:-8px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  margin-left: 5px;
-  background-color: $color-list;
+
+.enter, .footer {
   border: $border-color;
-  border-top: 0;
+  background-color: $color-list;
+}
+
+.enter > input {
+  height: 2.5em;
+  font-size: 1em;
+  width: 100%;
+  border:none;
+}
+.footer {
+  position: relative;
+
+  &__padded {
+    padding: 20px;
+
+    &--pile {
+      position: absolute;
+      height: 5px;
+      width: 99%;
+      bottom: -8px;
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      margin-left: 5px;
+      background-color: $color-list;
+      border: $border-color;
+      border-top: 0;
+    }
+  }
 }
