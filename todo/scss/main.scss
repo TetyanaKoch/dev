@@ -1,0 +1,32 @@
+/**
+ * Base
+ */
+$border-color:1px solid #ededed;
+$color-list:#ffffff;
+
+
+@import "base/reset";
+
+/**
+ * Components
+ */
+
+// @import "components/sample";
+// @import "components/list";
+@import "components/enter_footer";
+@import "components/button";
+
+body {
+  font:{
+    family: “Helvetica Neue”, Helvetica, Arial, Verdana, sans-serif;
+    size: 14px;
+  }
+}
+h1{
+  text-align: center;
+}
+
+.wrapper{
+  background-color: #f5f5f5;
+  padding: 30px;
+}

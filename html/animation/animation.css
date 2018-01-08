@@ -1,45 +1,161 @@
-.ball{
-    width: 100px;
-    height: 100px;
+.ball { width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0.5;
+    
+    
+    }
+
+#ball1 {
+    
     background-color: aqua;
-    border-radius: 50%;
-    position: absolute;
     left: 300px;
     bottom: 400px;
-
-    animation:pulse 5s infinite;
+    
+    animation:ball1 5s infinite;
 
     animation-duration: 5s;
-    animation-timing-function: ease-out;
     animation-delay: 1s;
-    animation-direction: initial;
+    
+}
 
+
+@keyframes ball1 {
+    0% {
+            opacity: 0;
+    }
+     }
+  
+#ball2 {
+    background-color: lightpink;
+    left: 375px;
+    bottom: 525px;
+
+    animation:ball2 5s infinite;
+
+    animation-duration: 5s;
+    animation-delay: 1s;
+    
+    
+}
+
+@keyframes ball2 {
+    
+    25% {
+         opacity: 0;   
+    }
+     }
+
+#ball3 {
+    background-color: lime;
+    left: 500px;
+    bottom: 585px;
+    
+    animation:ball3 5s infinite;
+
+    animation-duration: 5s;
+    animation-delay: 1s;
+    
+   }
+
+@keyframes ball3 {
+   
+    50% {
+         opacity: 0;   
+    }
+     }
+#ball4 {
+    background-color: palevioletred;
+    left: 625px;
+    bottom: 525px;
+     
+    animation:ball4 5s infinite;
+
+    animation-duration: 5s;
+    animation-delay: 1s;
+   
+    }
+
+@keyframes ball4 {
+    
+    75% {
+         opacity: 0;   
+    }
+     }
+
+#ball5 {
+    background-color: blueviolet;
+    left: 700px;
+    bottom: 400px;
+    
+    animation:ball5 5s infinite;
+
+    animation-duration: 5s;
+    animation-delay: 1s;
+    }
+
+@keyframes ball5 {
+   
+    100% {
+         opacity: 0;   
+    }
+     }
+
+
+.bild_rotate {
+    left: 525px;
+    bottom: 400px;
+    position: absolute;
+
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 
 }
-@keyframes pulse {
+
+
+@keyframes rotate {
+    0% {transform: rotateY(0deg)}
+    25% {transform: rotateY(90deg)}
+    50% {transform: rotateY(180deg)}
+    75% {transform: rotateY(270deg)}
+    100% {transform: rotateY(360deg)}
+}
+
+.bild_move {
+    position: absolute;
+    left: 1200px;
+    bottom: 50px;
+
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes move {
     0% {
-        left: 300px;
-        bottom: 400px;
+        left:100%;
+        transform: rotateY(0deg)
     }
-    25% {
-        background-color:lightpink;
-        left: 400px;
-        bottom: 500px;
-    }
-    50% {
-        background-color: lightsteelblue;
-        left: 500px;
-        bottom: 600px;
-    }
-    75% {
-        background-color: lightcoral;
-        left: 600px;
-        bottom: 500px;
+    95% {
+        transform: rotateY(180deg)
     }
     100% {
-        background-color: linen;
-        left: 700px;
-        bottom: 400px;
+        left: 10px;
     }
 
 }
+
+/*
+        transform: rotateY(0deg)  }
+    95% {
+        transform: rotateY(180deg)
+ */

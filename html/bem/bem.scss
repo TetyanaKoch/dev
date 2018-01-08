@@ -1,0 +1,44 @@
+$height:50px;
+$button-size: 50px;
+
+
+@import "colors";
+@import "buttons";
+
+header{
+    background-color: $background-color;
+    height: $height;
+
+}
+.navigation {
+    background: $navi-color;
+
+    &__list {
+        list-style-type: none;
+        padding:20px;
+        text-align: center;
+    }
+
+    &__item {
+        width: 33%;
+        float: left;
+    }
+
+    &__item> a{
+        text-decoration: none;
+
+        &:hover {
+            background-color: darken($navi-color, 10%);
+        }
+    }
+}
+
+.clearfix{
+    clear:both;
+}
+.artikelbox{
+    display: flex;
+    background-color: $background-color;
+}
+
+

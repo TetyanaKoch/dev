@@ -1,18 +1,26 @@
+.button {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 50px;
+  background-color: red; }
+
 .navigation {
-    background:lightgray;
-}
-
-.navigation__list {
+  background: lightblue; }
+  .navigation__list {
     list-style-type: none;
-    padding:20px;
-    width: 10%;
-    text-align: center;
-}
+    padding: 20px;
+    text-align: center; }
+  .navigation__item {
+    width: 33%;
+    float: left; }
+  .navigation__item > a {
+    text-decoration: none; }
+    .navigation__item > a:hover {
+      background-color: #86c5da; }
 
-.navigation__item {
+.clearfix {
+  clear: both; }
 
-}
-
-.navigation__item> a{
-    text-decoration: none;
-}
+header {
+  background-color: #ffee00;
+  height: 50px; }

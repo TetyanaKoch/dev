@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="todo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
     <title>ToDo</title>
 </head>
@@ -11,32 +11,32 @@
     <div class="head">
         <h1>todos</h1>
     </div>
-    <div class="list">
-        <div id="enter"><input type="text" class="auswahl padded" placeholder="What need to be done?" size="150"/></div>
+    <div>
+        <div class="enter"><input type="text" class="enter__auswahl padded" placeholder="What need to be done?" size="100"/></div>
 
 
-        <ul id="liste">
-            <li class="container">
-                <div class="checkbox"><img src="checkbox-checked.svg"></div>
-                <div class="item">Milch</div>
-                <button>X</button>
+        <ul class="list">
+            <li class="list__item">
+                    <div class="list__item--checkbox"><input type="checkbox" id="milch" name="milch" value="checked"></div>
+                    <div class="list__item--text"><label for="milch">Milch</label></div>
+                <button class="list__item button">X</button>
             </li>
-            <li class="container">
-                <div class="checkbox"><img src="checkbox-initial.svg"></div>
-                <div class="item">Wasser</div>
-                <button>X</button>
+            <li class="list__item">
+                <div class="list__item--checkbox"><input type="checkbox" id="wasser" name="wasser" value="checked"></div>
+                <div class="list__item--text"><label for="wasser">Wasser</label></div>
+                <button class="list__item button">X</button>
             </li>
-            <li class="container">
-                <div class="checkbox"><img src="checkbox-initial.svg"></div>
-                <div class="item">Vodka</div>
-                <button>X</button>
+            <li class="list__item">
+                <div class="list__item--checkbox"><input type="checkbox" id="saft" name="saft" value="checked"></div>
+                <div class="list__item--text"><label for="saft">Saft</label></div>
+                <button class="list__item button">X</button>
             </li>
         </ul>
 
-        <div class="footer"><p class="padded">3 Items left</p>
-            <div class="pile">
-                <div class="pile">
-                    <div class="pile"></div>
+        <div class="footer"><p class="footer__padded">3 Items left</p>
+            <div class="footer__padded--pile">
+                <div class="footer__padded--pile">
+                    <div class="footer__padded--pile"></div>
                 </div>
             </div>
         </div>

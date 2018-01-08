@@ -1,0 +1,62 @@
+$font-color:#ff0000;
+$container-width: 200px;
+$bg-color:green;
+
+
+.container{
+    dislay:flex;
+    color:$font-color;
+    width: $container-width;
+    height:200px;
+.item{
+    backgroound-color:red;
+font:{
+    family:verdana;
+    size:18px;
+    weight:10px;
+};
+}
+}
+.profile {
+    width:$container-width/2;
+    background-color: $bg-color;
+&:hover{
+     background-color: darken($bg-color, 10%);
+ }
+}
+.item{
+    dislay:flex;
+    color:$font-color;
+    width: $container-width;
+    height:200px;
+}
+.profile{
+.facebook & {
+    color:blue;
+}
+& .active {
+      color:white;
+  }
+&__item {
+     color:red;
+ }
+&__link {
+     color:red;
+ }
+}
+
+.todo{
+&__item{
+ }
+.item{
+&__button{
+
+ }
+&__description{
+
+ }
+&__checkbox{
+
+ }
+
+}
