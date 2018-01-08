@@ -86,12 +86,19 @@ table {
       border-top: 0; }
 
 .list__item button {
-  width: 50px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #ededed;
+  font-size: 0;
   transition-property: all;
   transition-duration: 0.5s;
   transition-delay: 0.3s;
   transition-timing-function: ease-in; }
+  .list__item button:hover {
+    font-size: 15px;
+    border-color: #af2f2f;
+    border-radius: 50%;
+    color: #5f1919; }
 
 body {
   font-family: “Helvetica Neue”, Helvetica, Arial, Verdana, sans-serif;

@@ -29,7 +29,13 @@
       margin-left: 5px;
       background-color: $color-list;
       border: $border-color;
-      border-top: 0;
+      border: {
+        top: 0;
+        bottom: {
+          right-radius: 2px;
+          left-radius: 2px;
+        }
+      }
     }
   }
 }
